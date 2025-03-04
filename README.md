@@ -1,4 +1,4 @@
-# MedSAM
+# MaskSAM
 This is the official repository for Mask-SAM: Segment Anything base on mask attention.
 
 
