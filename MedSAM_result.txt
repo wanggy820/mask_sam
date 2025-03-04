@@ -1,0 +1,120 @@
+MICCAI   由于没有test mask, 用val代替,但mask用的是u2net的预测结果   ratio=1.1
+U2net mean iou:0.844449, mean dice:0.915332
+interaction(val dataset) box mean iou:0.729782,interaction mean dice:0.842928
+interaction(test dataset) box mean iou:0.737624,interaction mean dice:0.847708
+interaction(val dataset) mask mean iou:0.794875,interaction mean dice:0.885317
+interaction(test dataset) mean iou:0.778984,interaction mean dice:0.875323
+U2net sam(val dataset) mean iou:0.923044,interaction mean dice:0.959204  ratio=1.01
+U2net sam(test dataset) mean iou:0.829970,interaction mean dice:0.905960
+
+Thyroid-tg3k  由于没有test mask, 用val代替,但mask用的是u2net的预测结果   ratio=1.02
+U2net mean iou:0.675431, mean dice:0.766860
+recall: 0.7056, specificity: 0.9961, precision: 0.9335, F1_score:0.7618, acc: 0.9795, iou: 0.6773, mae: 0.0209, dice: 0.7618, hd: 32.7331, auc: 0.8508
+interaction(val dataset) box mean iou:0.674314,interaction mean dice:0.785088
+interaction(test dataset) box mean iou:0.651377,interaction mean dice:0.747135
+interaction(val dataset) mask mean iou:0.708867,interaction mean dice:0.817574
+interaction(test dataset) mean iou:0.661910,interaction mean dice:0.767368
+U2net sam(val dataset) mean iou:0.794779,interaction mean dice:0.883922
+U2net sam(test dataset) mean iou:0.617854,interaction mean dice:0.734226
+
+##########################
+IoU = TP / (TP + FP + FN)
+dice = 2*TP/(FP + FN + 2 * TP)
+interaction(val dataset) mask mean iou:0.661903,interaction mean dice:0.767551
+U2net sam(val dataset) mean iou:0.965713,interaction mean dice:0.982432
+##########################
+
+ISIC2016 由于没有test mask, 用val代替,但mask用的是u2net的预测结果
+U2net mean iou:0.802275, mean dice:0.883841
+interaction(val dataset) box mean iou:0.872860,interaction mean dice:0.930503
+interaction(test dataset) box mean iou:0.750271,interaction mean dice:0.839883
+interaction(val dataset) mask mean iou:0.910636,interaction mean dice:0.952284     ratio=1.02
+interaction(test dataset) mask mean iou:0.841176,interaction mean dice:0.908380
+U2net sam(val dataset) mean iou:0.848416,interaction mean dice:0.908040
+U2net sam(test dataset) mean iou:0.744499,interaction mean dice:0.838362
+
+ISIC2017
+U2net mean iou:0.679987, mean dice:0.774312
+interaction(val dataset) box mean iou:0.851025,interaction mean dice:0.906765
+interaction(test dataset) box mean iou:0.744482,interaction mean dice:0.838352
+interaction(val dataset) mask mean iou:0.862284,interaction mean dice:0.924991    ratio=1.02
+interaction(test dataset) mask mean iou:0.691051,interaction mean dice:0.782873
+U2net sam(val dataset) mean iou:0.974382,interaction mean dice:0.986920
+U2net sam(test dataset) mean iou:0.691048,interaction mean dice:0.782871
+
+
+
+
+
+
+
+
+
+#########Thyroid-tg3k
+ratio=1.1 vit_h box, mask
+interaction mean iou:0.699001,interaction mean dice:0.804670
+ratio=1.02
+interaction mean iou:0.640323,interaction mean dice:0.744553
+ratio=1.00
+interaction mean iou:0.623139,interaction mean dice:0.730587
+IoU = TP / (TP + FP + FN)
+dice = 2*TP/(FP + FN + 2 * TP)
+ratio=1.1
+interaction mean iou:0.778233,interaction mean dice:0.865424
+
+ratio=1.02
+interaction mean iou:0.803617,interaction mean dice:0.881377
+interaction mean iou:0.761850,interaction mean dice:0.822677
+ratio=1.00
+interaction mean iou:0.766819,interaction mean dice:0.824059
+
+
+###########MICCAI
+ratio=1.1 vit_h box, mask
+interaction mean iou:0.785321,interaction mean dice:0.879006
+
+deepv3+ mean iou:0.844449, mean dice:0.915332
+
+
+
+
+#########Thyroid-tn3k
+fold0
+U2net mean iou:0.659591, mean dice:0.760811
+recall: 0.7820, specificity: 0.9766, precision: 0.8397, F1_score:0.7688, acc: 0.9539, iou: 0.6715, mae: 0.0472, dice: 0.7688, hd: 29.5704, auc: 0.8793
+trfeplus mean iou: 0.6880, mae: 0.0319, dice: 0.7870
+recall: 0.8719, specificity: 0.9838, precision: 0.8121, F1_score:0.8147, acc: 0.9713, iou: 0.7163, mae: 0.0287, dice: 0.8147, hd: 12.2701, auc: 0.9278
+
+
+sam box+mask+ratio=1.00 + trfeplus
+interaction mean iou:0.749487,interaction mean dice:0.837489
+recall: 0.8868, specificity: 0.9865, precision: 0.8388, F1_score:0.8375, acc: 0.9755, iou: 0.7495, mae: 0.0246, dice: 0.8375, hd: 13.3582, auc: 0.9366
+
+sam box+mask+ratio=1.02 + trfeplus
+interaction mean iou:0.746289,interaction mean dice:0.835550
+recall: 0.8817, specificity: 0.9864, precision: 0.8394, F1_score:0.8356, acc: 0.9755, iou: 0.7463, mae: 0.0246, dice: 0.8356, hd: 13.3596, auc: 0.9340
+sam box+mask+ratio=1.02 + cpfnet
+interaction mean iou:0.736483,interaction mean dice:0.828225
+recall: 0.8495, specificity: 0.9874, precision: 0.8525, F1_score:0.8282, acc: 0.9741, iou: 0.7365, mae: 0.0260, dice: 0.8282, hd: 13.7537, auc: 0.9184
+
+
+#########Thyroid-ddti
+
+
+------
+recall: 0.8655, specificity: 0.9845, precision: 0.8696, F1_score:0.8431, acc: 0.9725, iou: 0.7575, mae: 0.0276, dice: 0.8431, hd: 14.2565, auc: 0.9250
+------heigh
+recall: 0.8665, specificity: 0.9844, precision: 0.8688, F1_score:0.8431, acc: 0.9725, iou: 0.7576, mae: 0.0276, dice: 0.8431, hd: 14.2978, auc: 0.9254
+
+
+
+
+
+my model
+recall: 0.8891, specificity: 0.9822, precision: 0.8502, F1_score:0.8447, acc: 0.9726, iou: 0.7600, mae: 0.1736, dice: 0.8447, hd: 14.3962, auc: 0.9357, DSC: 0.8636
+
+prompt
+recall: 0.8665, specificity: 0.9844, precision: 0.8675, F1_score:0.8423, acc: 0.9726, iou: 0.7563, mae: 0.0275, dice: 0.8423, hd: 14.2765, auc: 0.9254, DSC:0.8613
+
+bpat_net
+recall: 0.8557, specificity: 0.9849, precision: 0.8294, F1_score:0.8164, acc: 0.9722, iou: 0.7187, mae: 0.0279, dice: 0.8164, hd: 14.0578, auc: 0.9415, DSC: 0.8363,

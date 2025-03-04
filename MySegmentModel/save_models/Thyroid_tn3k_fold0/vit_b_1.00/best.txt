@@ -1,0 +1,9 @@
+Experimental Day: 2024-12-24 20:36:24.286312
+mIoU: 0.8271858541669402
+dice: 0.9021809032519279
+epochs:100
+batch_size:2
+learning_rate:5e-05
+vit_type:vit_b
+ratio:1.0
+data_set : Thyroid_tn3k
