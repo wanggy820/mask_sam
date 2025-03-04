@@ -2,7 +2,7 @@
 import json
 import warnings
 from BPAT_UNet.our_model.BPATUNet_all import BPATUNet
-from MySegmentModel.modeling.MySegmentModel import build_model
+from MaskSAM.modeling.MySegmentModel import build_model
 from utils.data_convert import mean_iou, compute_loss, build_dataloader
 warnings.filterwarnings(action='ignore')
 import numpy as np

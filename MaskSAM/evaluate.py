@@ -7,7 +7,7 @@ from PIL import Image
 
 from BPAT_UNet.our_model.BPATUNet_all import BPATUNet
 from MySAMModel import MySAMModel
-from MySegmentModel.modeling.MySegmentModel import build_model
+from MaskSAM.modeling.MySegmentModel import build_model
 from segment_anything import sam_model_registry
 import logging
 from utils.data_convert import mean_iou, build_dataloader

@@ -3,7 +3,7 @@ import numpy as np
 import torch
 from matplotlib import pyplot as plt
 
-my_model_val_log = "./MySegmentModel/save_models/Thyroid_tn3k_fold0/vit_b_1.00/val.log"
+my_model_val_log = "./MaskSAM/save_models/Thyroid_tn3k_fold0/vit_b_1.00/val.log"
 sam_val_log = "./save_models/Thyroid_tn3k_fold0/vit_h_1.00/val.log"
 bpat_unet_val_log = "./BPAT_UNet/val.log"
 
@@ -39,7 +39,7 @@ class MyData():
         self.bapt_mask_path = "./BPAT_UNet/results/test-TN3K/BPAT-UNet/fold0/" + name
         self.sam_mask_path = "./save_models/Thyroid_tn3k_fold0/vit_h_1.00/val/" + name
         self.trfe_mask_path = "./TRFE_Net/results/test-TN3K/trfeplus/fold0/" + name
-        self.my_mask_path = "./MySegmentModel/save_models/Thyroid_tn3k_fold0/vit_b_1.00/val/" + name
+        self.my_mask_path = "./MaskSAM/save_models/Thyroid_tn3k_fold0/vit_b_1.00/val/" + name
 
         self.bapt_dice = bapt_dice
         self.sam_dice = sam_dice
